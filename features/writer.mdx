@@ -14,13 +14,13 @@ The Writer is EssayGen's unified generation engine. It handles everything from a
     Argumentative, analytical, research papers, compare/contrast, expository — all citation styles supported.
   </Card>
   <Card title="SEO Articles" icon="magnifying-glass">
-    Keyword-optimized blog posts and articles with structured headings, natural flow, and research-backed content.
+    Keyword-optimized blog posts and articles with structured headings and research-backed content. Available on Starter (5/mo), Growth (20/mo), Pro (unlimited).
   </Card>
   <Card title="RFI Responses" icon="file-lines">
-    Structured Requests for Information — clear, professional responses formatted to match buyer requirements.
+    Structured Requests for Information with professional formatting. Available on Growth (5/mo) and Pro (20/mo).
   </Card>
   <Card title="RFP Documents" icon="file-contract">
-    Full Request for Proposal responses — 3,000 to 15,000 words with section-level formatting and sourced claims.
+    Full Request for Proposal responses — 3,000 to 15,000 words. Available on Growth (5/mo) and Pro (20/mo).
   </Card>
   <Card title="Business Reports" icon="chart-bar">
     Executive summaries, market analyses, operational reports, and project briefs.
@@ -37,7 +37,7 @@ The Writer is EssayGen's unified generation engine. It handles everything from a
     Click **Writer** in the sidebar or **Generate Paper** from the Dashboard.
   </Step>
   <Step title="Enter your topic or prompt">
-    Type your topic or a detailed prompt. The more specific, the better the output.
+    The more specific your prompt, the better the output.
 
     **Academic:** *"Argumentative essay on social media's impact on mental health, 1,500 words, APA 7"*
 
@@ -48,55 +48,64 @@ The Writer is EssayGen's unified generation engine. It handles everything from a
   <Step title="Configure your options">
     | Option | Description |
     |---|---|
-    | Content Type | Academic essay, research paper, RFI, RFP, SEO article, blog post, business report, email, and more |
+    | Content Type | Essay, research paper, RFI, RFP, SEO article, blog post, business report, email, and more |
     | Writing Level / Tone | High School → PhD (academic) or Formal / Conversational / Persuasive (business) |
     | Word Count | 500 – 15,000+ words |
     | Citation Style | APA 7, MLA 9, Chicago, Harvard (academic content) |
   </Step>
   <Step title="Generate">
-    Click **Generate**. Content streams in real time. Short pieces (500–1,000 words) take ~30–60 seconds. Long-form documents (RFPs at 8,000+ words) take 2–4 minutes.
+    Content streams in real time. Short pieces take ~30–60 seconds. RFPs at 8,000+ words take 2–4 minutes.
   </Step>
   <Step title="Review and download">
     Edit in the built-in editor, then save to your library or download as DOCX.
   </Step>
 </Steps>
 
+## Availability by Plan
+
+| Content Type | Starter | Growth | Pro |
+|---|---|---|---|
+| Academic essays | ✓ | ✓ | ✓ |
+| Blog posts | ✓ | ✓ | ✓ |
+| SEO articles | 5/mo | 20/mo | Unlimited |
+| RFI responses | — | 5/mo | 20/mo |
+| RFP documents | — | 5/mo | 20/mo |
+| Business reports | ✓ | ✓ | ✓ |
+
 ## Humanization
 
-All generated content is automatically processed through EssayGen's humanization pipeline, which:
+All generated content is automatically processed through EssayGen's humanization pipeline:
 
 - Rewrites AI-patterned sentences with natural variation
-- Mixes writing fingerprints from multiple AI models to reduce detector confidence
+- Mixes writing fingerprints from multiple models to reduce detector confidence
 - Targets a humanization score above 85
 
-The humanization score is shown after generation and in your Papers library.
-
 <Note>
-  Humanization scores are estimates based on AI detection models (Sapling, GPTZero, Originality.ai). No tool can guarantee a 100% human score on all detectors at all times.
+  Humanization scores are estimates based on Sapling, GPTZero, and Originality.ai. No tool can guarantee 100% undetectability on all detectors at all times.
 </Note>
 
 ## Citations and Sources
 
-For academic content and research-heavy business documents, EssayGen sources real references via Perplexity's research API. Citations are formatted to your selected style with in-text references and a bibliography.
-
-For RFPs and RFIs, Tavily web research is used to inject current, relevant context into the generation.
+For academic content and research-heavy business documents, EssayGen sources real references via Perplexity's research API. For RFPs and RFIs, Tavily web research injects current context into the generation.
 
 | Plan | Research quality |
 |---|---|
-| Essential | Standard sourcing |
-| Pro | Enhanced research (Perplexity Sonar Pro + Tavily) |
-| Business+ | Deep research mode (Perplexity Sonar Deep Research) |
+| Starter | Standard sourcing |
+| Growth | Enhanced research (Perplexity Sonar Pro + Tavily) |
+| Pro | Deep research mode (Perplexity Sonar Deep Research) |
 
 ## Applying a Brand Book
 
-Business+ users can apply a Brand Book to any generation. This ensures your brand's voice, tone, and vocabulary are applied automatically — especially useful for RFPs and business reports where consistency matters.
+Pro users can apply a Brand Book to any generation to enforce brand voice, tone, and vocabulary automatically — especially useful for RFPs and business reports.
 
 [Learn more about Brand Books →](/features/brand-books)
 
-## Paper Status
+## Document Credits
 
-| Status | Meaning |
+RFP and RFI generation consumes **document credits** — a separate meter from word count, reflecting the higher cost of long-form structured generation.
+
+| Plan | Document credits/mo |
 |---|---|
-| Complete | Generation and humanization finished successfully |
-| In Progress | Still generating or being humanized |
-| Failed | An error occurred — try regenerating |
+| Starter | — |
+| Growth | 5 |
+| Pro | 20 |
