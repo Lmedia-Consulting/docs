@@ -1,11 +1,34 @@
 ---
 title: "Writer"
-description: "Generate academic essays, research papers, and business content with AI"
+description: "Generate academic essays, business documents, SEO content, RFPs, and more"
 ---
 
 ## Overview
 
-The Writer is EssayGen's core generation tool. It handles everything from academic essays and research papers to business reports, proposals, and marketing copy — all in one place.
+The Writer is EssayGen's unified generation engine. It handles everything from academic essays to long-form business documents — including RFIs, RFPs, SEO articles, blog posts, and professional reports — all in one place.
+
+## What You Can Generate
+
+<CardGroup cols={2}>
+  <Card title="Academic Essays" icon="graduation-cap">
+    Argumentative, analytical, research papers, compare/contrast, expository — all citation styles supported.
+  </Card>
+  <Card title="SEO Articles" icon="magnifying-glass">
+    Keyword-optimized blog posts and articles with structured headings, natural flow, and research-backed content.
+  </Card>
+  <Card title="RFI Responses" icon="file-lines">
+    Structured Requests for Information — clear, professional responses formatted to match buyer requirements.
+  </Card>
+  <Card title="RFP Documents" icon="file-contract">
+    Full Request for Proposal responses — 3,000 to 15,000 words with section-level formatting and sourced claims.
+  </Card>
+  <Card title="Business Reports" icon="chart-bar">
+    Executive summaries, market analyses, operational reports, and project briefs.
+  </Card>
+  <Card title="Blog & Marketing Copy" icon="bullhorn">
+    Thought leadership posts, email copy, product descriptions, and social-ready content.
+  </Card>
+</CardGroup>
 
 ## Generating Content
 
@@ -14,22 +37,24 @@ The Writer is EssayGen's core generation tool. It handles everything from academ
     Click **Writer** in the sidebar or **Generate Paper** from the Dashboard.
   </Step>
   <Step title="Enter your topic or prompt">
-    Type your topic or a detailed prompt. Be specific for better results.
+    Type your topic or a detailed prompt. The more specific, the better the output.
 
-    **Academic example:** *"Argumentative essay on the impact of social media on mental health, 1500 words, APA"*
+    **Academic:** *"Argumentative essay on social media's impact on mental health, 1,500 words, APA 7"*
 
-    **Business example:** *"Executive summary for a Q2 marketing report, formal tone, 500 words"*
+    **RFP:** *"RFP response for a cloud infrastructure modernization project, 8,000 words, formal tone"*
+
+    **SEO:** *"SEO article targeting 'best project management software for startups', 1,800 words"*
   </Step>
   <Step title="Configure your options">
     | Option | Description |
     |---|---|
-    | Content Type | Academic essay, research paper, business report, proposal, email, marketing copy, and more |
-    | Writing Level | High School, Undergraduate, Graduate, PhD (academic) or Formal / Conversational (business) |
-    | Word Count | 500 – 5,000+ words |
+    | Content Type | Academic essay, research paper, RFI, RFP, SEO article, blog post, business report, email, and more |
+    | Writing Level / Tone | High School → PhD (academic) or Formal / Conversational / Persuasive (business) |
+    | Word Count | 500 – 15,000+ words |
     | Citation Style | APA 7, MLA 9, Chicago, Harvard (academic content) |
   </Step>
   <Step title="Generate">
-    Click **Generate**. Your content streams in real time. A 1,000-word piece takes roughly 30–60 seconds.
+    Click **Generate**. Content streams in real time. Short pieces (500–1,000 words) take ~30–60 seconds. Long-form documents (RFPs at 8,000+ words) take 2–4 minutes.
   </Step>
   <Step title="Review and download">
     Edit in the built-in editor, then save to your library or download as DOCX.
@@ -38,7 +63,7 @@ The Writer is EssayGen's core generation tool. It handles everything from academ
 
 ## Humanization
 
-Every generated piece is automatically processed through EssayGen's humanization pipeline, which:
+All generated content is automatically processed through EssayGen's humanization pipeline, which:
 
 - Rewrites AI-patterned sentences with natural variation
 - Mixes writing fingerprints from multiple AI models to reduce detector confidence
@@ -52,17 +77,19 @@ The humanization score is shown after generation and in your Papers library.
 
 ## Citations and Sources
 
-For academic content, EssayGen sources real references via Perplexity's research API. Citations are formatted to your selected style with in-text references and a bibliography.
+For academic content and research-heavy business documents, EssayGen sources real references via Perplexity's research API. Citations are formatted to your selected style with in-text references and a bibliography.
+
+For RFPs and RFIs, Tavily web research is used to inject current, relevant context into the generation.
 
 | Plan | Research quality |
 |---|---|
 | Essential | Standard sourcing |
-| Pro | Enhanced research (Perplexity Sonar Pro) |
+| Pro | Enhanced research (Perplexity Sonar Pro + Tavily) |
 | Business+ | Deep research mode (Perplexity Sonar Deep Research) |
 
 ## Applying a Brand Book
 
-Business+ users can apply a Brand Book to any generation. This ensures your brand's voice, tone, and vocabulary are automatically applied to the output.
+Business+ users can apply a Brand Book to any generation. This ensures your brand's voice, tone, and vocabulary are applied automatically — especially useful for RFPs and business reports where consistency matters.
 
 [Learn more about Brand Books →](/features/brand-books)
 
